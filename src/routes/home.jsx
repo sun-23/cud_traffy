@@ -16,8 +16,9 @@ export default function Home() {
       setDesc(value);
     } else if (name === "image") {
       const upload_file = event.target.files[0];
+      console.log(upload_file.name);
 
-      if (upload_file.name.match(/\.(jpg|jpeg|png|gif)$/i)) {
+      if (!upload_file.name.match(/\.(jpg|jpeg|png|gif)$/i)) {
         alert("not an image");
         return;
       }
