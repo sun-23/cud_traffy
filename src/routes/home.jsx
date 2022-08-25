@@ -36,6 +36,7 @@ export default function Home() {
   return (
     <div className="home-body mt-5">
       <Container>
+        <h2>รายงานปัญหาทางกายภาพในโรงเรียน</h2>
         {image.url ? (
           <Container>
             <Form.Label>ภาพที่ถ่ายได้</Form.Label>
